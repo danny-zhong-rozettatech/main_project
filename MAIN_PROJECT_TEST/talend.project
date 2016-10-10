@@ -331,4 +331,7 @@
   <TalendProperties:ProjectReference xmi:id="_jkCVQo6UEeak4J3zTzunCQ" project="_jkCVQI6UEeak4J3zTzunCQ" branch="master" referencedBranch="branches/develop">
     <referencedProject href="../REFERENCE_TEST/talend.project#projectReference"/>
   </TalendProperties:ProjectReference>
+  <TalendProperties:User xmi:id="_QGTfUY6WEea9VaUoEdHdEg" login="andy.fox@rozettatech.com" firstName="admin" lastName="admin" type="DQ" additionnalData="{}"/>
+  <TalendProperties:User xmi:id="_QGTfUo6WEea9VaUoEdHdEg" login="nathan.williams@sirca.org.au" firstName="Nathan" lastName="Williams" type="DQ" additionnalData="{}"/>
+  <TalendProperties:User xmi:id="_QGTfU46WEea9VaUoEdHdEg" login="kenneth.cruz@sirca.org.au" firstName="Kenneth" lastName="Cruz" type="DQ" additionnalData="{}"/>
 </xmi:XMI>
