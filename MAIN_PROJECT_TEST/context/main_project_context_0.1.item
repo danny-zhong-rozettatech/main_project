@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_DXGBkJDiEea_C6pTlN_h7w" confirmationNeeded="false" name="CI">
-  <contextParameter xmi:id="_DXGBkZDiEea_C6pTlN_h7w" comment="" name="main1" prompt="main1?" promptNeeded="false" type="id_String" value="CI4456"/>
-  <contextParameter xmi:id="_DXGBkpDiEea_C6pTlN_h7w" comment="" name="main2" prompt="main2?" promptNeeded="false" type="id_String" value="234234"/>
-</talendfile:ContextType>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_DXGBkJDiEea_C6pTlN_h7w" confirmationNeeded="false" name="CI">
+    <contextParameter xmi:id="_DXGBkZDiEea_C6pTlN_h7w" comment="" name="main1" prompt="main1?" promptNeeded="false" type="id_String" value="CI4456"/>
+    <contextParameter xmi:id="_DXGBkpDiEea_C6pTlN_h7w" comment="" name="main2" prompt="main2?" promptNeeded="false" type="id_String" value="234234"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_Ov_S0JDqEea_C6pTlN_h7w" confirmationNeeded="false" name="Develop">
+    <contextParameter xmi:id="_Ov_S0ZDqEea_C6pTlN_h7w" comment="" name="main1" prompt="main1?" promptNeeded="false" type="id_String" value="CI4456"/>
+    <contextParameter xmi:id="_Ov_S0pDqEea_C6pTlN_h7w" comment="" name="main2" prompt="main2?" promptNeeded="false" type="id_String" value="234234"/>
+  </talendfile:ContextType>
+</xmi:XMI>
