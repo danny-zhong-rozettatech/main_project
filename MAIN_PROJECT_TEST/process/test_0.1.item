@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
-  <context confirmationNeeded="false" name="Default"/>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Develop" jobType="Standard">
+  <context confirmationNeeded="false" name="CI">
+    <contextParameter comment="" name="main1" prompt="main1?" promptNeeded="false" repositoryContextId="_RHWQII6XEea9VaUoEdHdEg" type="id_String" value="CI4456"/>
+    <contextParameter comment="" name="main2" prompt="main2?" promptNeeded="false" repositoryContextId="_RHWQII6XEea9VaUoEdHdEg" type="id_String" value="234234"/>
+    <contextParameter comment="" name="Nathan" prompt="Nathan?" promptNeeded="false" repositoryContextId="_ThBgQI52EeaFzqznfPw0yw" type="id_String" value="CI14"/>
+    <contextParameter comment="" name="Nathan2" prompt="Nathan2?" promptNeeded="false" repositoryContextId="_ThBgQI52EeaFzqznfPw0yw" type="id_String" value="CI15"/>
+    <contextParameter comment="" name="new1" prompt="new1?" promptNeeded="false" repositoryContextId="_ThBgQI52EeaFzqznfPw0yw" type="id_String" value=""/>
+    <contextParameter comment="" name="newAdded" prompt="newAdded?" promptNeeded="false" repositoryContextId="_ThBgQI52EeaFzqznfPw0yw" type="id_String" value="CI13"/>
+    <contextParameter comment="" name="Talend" prompt="Talend?" promptNeeded="false" repositoryContextId="_ThBgQI52EeaFzqznfPw0yw" type="id_String" value="CI16"/>
+    <contextParameter comment="" name="test1" prompt="test1?" promptNeeded="false" repositoryContextId="_ThBgQI52EeaFzqznfPw0yw" type="id_String" value="CI1"/>
+    <contextParameter comment="" name="test2" prompt="test2?" promptNeeded="false" repositoryContextId="_ThBgQI52EeaFzqznfPw0yw" type="id_String" value="CI12"/>
+  </context>
+  <context confirmationNeeded="false" name="Develop">
+    <contextParameter comment="" name="main1" prompt="main1?" promptNeeded="false" repositoryContextId="_RHWQII6XEea9VaUoEdHdEg" type="id_String" value="4456"/>
+    <contextParameter comment="" name="main2" prompt="main2?" promptNeeded="false" repositoryContextId="_RHWQII6XEea9VaUoEdHdEg" type="id_String" value="234234"/>
+    <contextParameter comment="" name="Nathan" prompt="Nathan?" promptNeeded="false" repositoryContextId="_ThBgQI52EeaFzqznfPw0yw" type="id_String" value="Awesome"/>
+    <contextParameter comment="" name="Nathan2" prompt="Nathan2?" promptNeeded="false" repositoryContextId="_ThBgQI52EeaFzqznfPw0yw" type="id_String" value="Blah"/>
+    <contextParameter comment="" name="new1" prompt="new1?" promptNeeded="false" repositoryContextId="_ThBgQI52EeaFzqznfPw0yw" type="id_String" value=""/>
+    <contextParameter comment="" name="newAdded" prompt="newAdded?" promptNeeded="false" repositoryContextId="_ThBgQI52EeaFzqznfPw0yw" type="id_String" value=""/>
+    <contextParameter comment="" name="Talend" prompt="Talend?" promptNeeded="false" repositoryContextId="_ThBgQI52EeaFzqznfPw0yw" type="id_String" value="Is Shit!"/>
+    <contextParameter comment="" name="test1" prompt="test1?" promptNeeded="false" repositoryContextId="_ThBgQI52EeaFzqznfPw0yw" type="id_String" value="1111"/>
+    <contextParameter comment="" name="test2" prompt="test2?" promptNeeded="false" repositoryContextId="_ThBgQI52EeaFzqznfPw0yw" type="id_String" value="2222"/>
+  </context>
   <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
@@ -107,4 +130,17 @@
     <routinesParameter id="_kea54I6UEeak4J3zTzunCQ" name="TalendDate"/>
     <routinesParameter id="_kecvEI6UEeak4J3zTzunCQ" name="TalendString"/>
   </parameters>
+  <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="224" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tWarn_1" show="false"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;this is a warning &quot; + context.test1"/>
+    <elementParameter field="TEXT" name="CODE" value="42"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="4"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tWarn_1"/>
+  </node>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tWarn_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
 </talendfile:ProcessType>
